@@ -1,4 +1,4 @@
-('# Translation and Summarization',
+'# Translation and Summarization',
  '# Translation with `transformers` Library\n\nThis guide demonstrates how to use the Hugging Face `transformers` library for translating text using pre-trained models, without needing to permanently download the models to your local drive.',
  ['## Free up some memory before continuing\n- In order to have enough free memory to run the rest of the code, please run the following to free up memory on the machine.\nThe code deletes objects and manually invoking garbage collection. This is useful when working with large models or datasets, especially in environments with limited memory resources.',
   '---',
