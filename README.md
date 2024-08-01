@@ -29,7 +29,8 @@ pip install librosa
 pip install gradio
 pip install timm
 pip install inflect
-pip install phonemizer ```
+pip install phonemizer
+
 
 
 For text-to-speech capabilities, py-espeak-ng is required and is only available on Linux operating systems. Install it using the following commands:
