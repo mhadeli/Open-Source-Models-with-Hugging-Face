@@ -1,60 +1,49 @@
-'# Translation and Summarization',
- '# Translation with `transformers` Library\n\nThis guide demonstrates how to use the Hugging Face `transformers` library for translating text using pre-trained models, without needing to permanently download the models to your local drive.',
- ['## Free up some memory before continuing\n- In order to have enough free memory to run the rest of the code, please run the following to free up memory on the machine.\nThe code deletes objects and manually invoking garbage collection. This is useful when working with large models or datasets, especially in environments with limited memory resources.',
-  '---',
-  '# Build the `summarization` pipeline using 🤗 Transformers Library',
-  '---',
-  '# Sentence Embeddings',
-  'This project demonstrates the use of the `SentenceTransformer` library to compute sentence embeddings and measure the similarity between sentences using cosine similarity.',
-  'More info on [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).',
-  '---',
-  '# Zero-Shot Audio Classification\n\n- In the classroom, the libraries have already been installed for you.\n- If you are running this code on your own machine, please install the following:\n``` \n    !pip install transformers\n    !pip install datasets\n    !pip install soundfile\n    !pip install librosa\n```\n\nThe `librosa` library may need to have [ffmpeg](https://www.ffmpeg.org/download.html) installed. \n- This page on [librosa](https://pypi.org/project/librosa/) provides installation instructions for ffmpeg.\n\n- Here is some code that suppresses warning messages.',
-  '### Build the `audio classification` pipeline using 🤗 Transformers Library',
-  '### Sampling Rate for Transformer Models\n- How long does 1 second of high resolution audio (192,000 Hz) appear to the Whisper model (which is trained to expect audio files at 16,000 Hz)?',
-  '- The 1 second of high resolution audio appears to the model as if it is 12 seconds of audio.',
-  '- How about 5 seconds of audio?',
-  '- 5 seconds of high resolution audio appears to the model as if it is 60 seconds of audio.',
-  '* Set the correct sampling rate for the input and the model.',
-  '---',
-  '# Automatic Speech Recognition',
-  '# Audio Processing and Transcription with Transformers and Gradio\n\nThis project demonstrates how to use the `transformers` library for automatic speech recognition (ASR), using a dataset of audio samples, and how to build a web application for speech transcription using Gradio.',
-  '### 1. Setting Up the Environment\nThe code initializes logging and loads an audio dataset.',
-  '### 2. Automatic Speech Recognition (ASR)\nUsing a pre-trained ASR model, the code transcribes audio samples.',
-  '### 3. Building a Gradio Interface\nGradio is used to create a web app that allows users to transcribe audio from a microphone or file upload.',
-  '### 4. Audio Processing\nThe code includes additional steps for handling and processing audio files, such as converting stereo audio to mono and resampling.',
-  '---',
-  '# Text to Speech',
-  '- In the classroom, the libraries are already installed for you.\n- If you would like to run this code on your own machine, you can install the following:\n\n```\n    !pip install transformers\n    !pip install gradio\n    !pip install timm\n    !pip install timm\n    !pip install inflect\n    !pip install phonemizer\n    \n```',
-  '**Note:**  `py-espeak-ng` is only available Linux operating systems.\n\nTo run locally in a Linux machine, follow these commands:\n```\n    sudo apt-get update\n    sudo apt-get install espeak-ng\n    pip install py-espeak-ng\n```',
-  '### Build the `text-to-speech` pipeline using the 🤗 Transformers Library',
-  '- Here is some code that suppresses warning messages.',
-  '---',
-  '',
-  '---',
-  '# Segmentation - SAM',
-  '3. Segment Anything Model (SAM) Pipeline\nSet up and use the SAM model pipeline:',
-  '4. Faster Inference: Infer an Image and a Single Point\nThis section demonstrates how to use the SAM model with specific points for segmentation:',
-  '5. Depth Estimation with DPT\nSet up and run the depth estimation pipeline:',
-  '6. Using Gradio to Create a Web Interface\nCreate a simple interface for depth estimation using Gradio:',
-  '---',
-  '# Image Retrieval',
-  'Load the Model and Processor',
-  'Image and Text Input',
-  'Image-Text Matching',
-  '---',
-  '# Image Captioning',
-  'Load the Image from URL',
-  'Conditional Image Captioning\nGenerate captions based on a specific prompt.',
-  'Unconditional Image Captioning\nGenerate captions without a specific prompt.',
-  '---',
-  '# Visual Question & Answering',
-  'Suppress Warning Messages',
-  'Load the Model and Processor',
-  'Load the Image from URL',
-  'Ask a Question About the Image',
-  '---',
-  '# Zero-Shot Image Classification',
-  'Load the Image from URL',
-  'Zero-Shot Image Classification\nSet the labels and classify the image:',
-  '---',
-  '# Deploy ML Models on 🤗 Hub using Gradio'])
+# Translation and Summarization
+
+## Overview
+
+This project demonstrates the use of the Hugging Face `transformers` library for various natural language processing (NLP) and computer vision tasks. It covers translation, summarization, sentence embeddings, zero-shot audio classification, text-to-speech, segmentation, image retrieval, image captioning, visual question answering, and zero-shot image classification.
+
+## Sections
+
+1. **Translation**: Using pre-trained models to translate text.
+2. **Summarization**: Building a summarization pipeline.
+3. **Sentence Embeddings**: Computing sentence embeddings and measuring similarity.
+4. **Zero-Shot Audio Classification**: Classifying audio files without training.
+5. **Text to Speech**: Converting text to speech using `transformers`.
+6. **Segmentation - SAM**: Implementing the Segment Anything Model (SAM) for image segmentation.
+7. **Image Retrieval**: Loading models and processors for image and text input and performing image-text matching.
+8. **Image Captioning**: Generating captions for images with and without specific prompts.
+9. **Visual Question & Answering**: Asking questions about images and getting answers.
+10. **Zero-Shot Image Classification**: Classifying images into categories without prior training on specific labels.
+
+## Requirements
+
+To run the code provided in this notebook, you'll need to install the following Python packages:
+
+```bash
+pip install transformers
+pip install datasets
+pip install soundfile
+pip install librosa
+pip install gradio
+pip install timm
+pip install inflect
+pip install phonemizer
+
+For text-to-speech capabilities, py-espeak-ng is required and is only available on Linux operating systems. Install it using the following commands:
+
+```
+sudo apt-get update
+sudo apt-get install espeak-ng
+pip install py-espeak-ng
+
+## Usage
+Follow the instructions in each section of the notebook to run the examples. The notebook provides code snippets and explanations for setting up and using various NLP and computer vision models.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+Hugging Face for the transformers library
+The open-source community for various contributions and support
