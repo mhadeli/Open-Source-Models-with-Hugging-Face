@@ -29,7 +29,8 @@ pip install librosa
 pip install gradio
 pip install timm
 pip install inflect
-pip install phonemizer
+pip install phonemizer ```
+
 
 For text-to-speech capabilities, py-espeak-ng is required and is only available on Linux operating systems. Install it using the following commands:
 
@@ -37,6 +38,7 @@ For text-to-speech capabilities, py-espeak-ng is required and is only available 
 sudo apt-get update
 sudo apt-get install espeak-ng
 pip install py-espeak-ng
+```
 
 ## Usage
 Follow the instructions in each section of the notebook to run the examples. The notebook provides code snippets and explanations for setting up and using various NLP and computer vision models.
